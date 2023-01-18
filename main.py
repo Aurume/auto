@@ -43,7 +43,7 @@ while True:
             with conn:
                 c.execute(ieskoti, (marke, modelis, spalva, int(pagaminta_nuo), int(pagaminta_iki),
                                     int(kaina_nuo), int(kaina_iki)))
-                rezultatas = c.fetchall()  # fetchone grazina None.
+                rezultatas = c.fetchall()
 
             for i in rezultatas:
                 print(i)
